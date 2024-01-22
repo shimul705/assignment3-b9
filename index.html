@@ -10,12 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             clifford: '#da373d',
+            'subh-text': '#131318',
             'White': '#fff',
             'p-colour': '#FF4240',
           }
@@ -24,57 +26,161 @@
     }
   </script>
   <style>
-    .font-manrope{
+    .font-manrope {
       font-family: 'Manrope', sans-serif;
     }
   </style>
 </head>
+<!-- =============================================this the body part===================================================== -->
 
 <body class="w-5/6 mx-auto font-manrope">
-  <nav class="my-12">
-    <div class="navbar p-0 bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+
+  <header>
+
+
+    <!-- --------------this is navbar---------------- -->
+
+    <nav class="my-12">
+      <div class="navbar p-0 bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu font-normal menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
-          <ul tabindex="0" class="menu font-normal menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Home</a></li>
+          <a class="pl-0 btn-ghost text-4xl font-extrabold">Hockey's</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu text-base menu-horizontal px-1 font-normal">
+            <li><a class="text-p-colour font-bold ">Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
             <li><a>Blog</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a class="btn pl-0 btn-ghost text-4xl font-extrabold">Hockey's</a>
+        <div class="navbar-end">
+          <a class="btn px-6 py-4 h-auto text-white font-bold text-xl bg-p-colour">Get Ticket</a>
+        </div>
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu text-base menu-horizontal px-1 font-normal">
-          <li><a class="text-p-colour font-bold ">Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Pages</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a class="btn px-6 py-4 h-auto text-white font-bold text-xl bg-p-colour">Get Ticket</a>
-      </div>
-    </div>
-  </nav>
-  
-  <header>
+    </nav>
 
-    <section class="border-black border-2 m-0">
-      <h1>Hello</h1>
-      <h3>Shimul Mahmud</h3>
-      <h2>I'm an engineer</h2>
+    <section class="">
+
+      <div class="carousel w-full rounded-2xl">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./Images/1.png" class="w-full" />
+          <div class="absolute flex lg:justify-left sm:justify-center transform -translate-y-1/2 left-5 bottom-0 gap-2">
+            <a href="#slide2" class="btn bg-black border-none text-white btn-circle">❮</a>
+            <a href="#slide2" class="btn bg-black border-none text-white btn-circle">❯</a>
+          </div>
+        </div>
+
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/4.png" class="w-full" />
+          <div class="absolute flex lg:justify-left sm:justify-center transform -translate-y-1/2 left-5 bottom-0 gap-2">
+            <a href="#slide1" class="btn bg-black border-none text-white btn-circle">❮</a>
+            <a href="#slide1" class="btn bg-black border-none text-white btn-circle">❯</a>
+          </div>
+        </div>
+
+      </div>
     </section>
+
+
   </header>
   <main>
+    <!-- ======================professional Hokey club==================== -->
 
+    <section>
+      <hr class="mt-24 mb-8 border-t-2 border-dotted border-[#0d0d1221]">
+
+      <div class="container text-center">
+        <h3 class="text-subh-text text-4xl font-extrabold">Professional Hockeys Club</h3>
+        <p class="font-medium text-[#0d0d1263] text-base w-2/3 mx-auto mt-6">Dit amet consectetur. Condimentum dignissim
+          adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+      </div>
+
+      <hr class="mt-8 mb-12 border-t-2 border-dotted border-[#0d0d1221]">
+
+      <div class="flex flex-col lg:flex-row items-center justify-around text-center gap-8">
+        <div class="flex items-center flex-col">
+          <div class="radial-progress text-[#FF4240]" style="--value:87; --size:8rem; --thickness:1rem;"
+            role="progressbar">
+            <span class="text-[#131318] font-extrabold text-3xl">87%</span>
+          </div>
+          <h3 class="text-subh-text text-xl font-semibold mb-4 mt-6">Prayer Facility</h3>
+          <p class="font-normal text-[#0d0d1263] text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
+        </div>
+
+        <div class="flex items-center flex-col text-center">
+          <div class="radial-progress text-[#49D293]" style="--value:95; --size:8rem; --thickness:1rem;"
+            role="progressbar">
+            <span class="text-[#131318] font-extrabold text-3xl" style="--value: 95;">95%</span>
+          </div>
+          <h3 class="text-subh-text text-xl font-semibold mb-4 mt-6">Experienced Coach</h3>
+          <p class="font-normal text-[#0d0d1263] text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
+        </div>
+
+        <div class="flex items-center flex-col text-center">
+          <div class="radial-progress text-[#FFB546]" style="--value:90; --size:8rem; --thickness:1rem;"
+            role="progressbar">
+            <span class="text-[#131318] font-extrabold text-3xl">90%</span>
+          </div>
+          <h3 class="text-subh-text text-xl font-semibold mb-4 mt-6">Senior Player</h3>
+          <p class="font-normal text-[#0d0d1263] text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
+        </div>
+
+        <div class="flex items-center flex-col text-center">
+          <div class="radial-progress text-[#4C8DF1]" style="--value:80; --size:8rem; --thickness:1rem;"
+            role="progressbar">
+            <span class="text-[#131318] font-extrabold text-3xl">80%</span>
+          </div>
+          <h3 class="text-subh-text text-xl font-semibold mb-4 mt-6">Training Ground</h3>
+          <p class="font-normal text-[#0d0d1263] text-base">Amet consectetur. Condimentum dignissim adipiscing.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ======================Program Sections=========================== -->
+    <section>
+      <hr class="mt-24 mb-8 border-t-2 border-dotted border-[#0d0d1221]">
+      <div class="container text-center">
+        <h3 class="text-subh-text text-4xl font-extrabold">Program Sections</h3>
+        <p class="font-medium text-[#0d0d1263] text-base w-2/3 mx-auto mt-6">Dit amet consectetur. Condimentum dignissim
+          adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+      </div>
+      <hr class="mt-8 mb-12 border-t-2 border-dotted border-[#0d0d1221]">
+
+      <div>
+        <div class="hero min-h-screen"
+          style="background-image: url('./Images/2.png');">
+          <div class="hero-overlay"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+              <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
