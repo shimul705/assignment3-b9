@@ -35,9 +35,9 @@
 </head>
 <!-- =============================================this the body part===================================================== -->
 
-<body class="w-5/6 mx-auto font-manrope">
+<body class="font-manrope">
 
-  <header>
+  <header class="sm:w-5/6 w-11/12 mx-auto">
 
 
     <!-- --------------this is navbar---------------- -->
@@ -102,7 +102,7 @@
 
 
   </header>
-  <main>
+  <main class="sm:w-5/6 w-11/12 mx-auto">
     <!-- ======================professional Hokey club==================== -->
 
     <section>
@@ -538,12 +538,12 @@
 
 
 
-      <div>
+      <div class="grid lg:grid-cols-9 grid-cols-1 gap-6">
 
         <!--Contact Card -->
-        <div class=" grid grid-cols-1 gap-6">
+        <div class=" grid grid-cols-1 md:col-span-4 gap-6 md:p-12 p-6 rounded-2xl border border-[#E7E7E8]">
           <!-- Phone Number -->
-          <div class="card w-96 bg-[#F8FDF0]">
+          <div class="card w-full bg-[#F8FDF0]">
             <div class="card-body">
               <img class="w-1/6" src="./Images/Group 1171275317.png" alt="">
               <p class="font-normal text-[#0d0d1263] mt-4">Phone Number :</p>
@@ -552,7 +552,7 @@
           </div>
 
           <!-- Email -->
-          <div class="card w-96 bg-[#FFFCEF]">
+          <div class="card w-full bg-[#FFFCEF]">
             <div class="card-body">
               <img class="w-1/6" src="./Images/Group 1171275318.png" alt="">
               <p class="font-normal text-[#0d0d1263] mt-4">Email :</p>
@@ -561,7 +561,7 @@
           </div>
 
           <!-- Address -->
-          <div class="card w-96 bg-[#EFF5FE]">
+          <div class="card w-full bg-[#EFF5FE]">
             <div class="card-body">
               <img class="w-1/6" src="./Images/Group 1171275321.png" alt="">
               <p class="font-normal text-[#0d0d1263] mt-4">Location :</p>
@@ -572,10 +572,10 @@
         </div>
 
         <!-- Contact Form -->
-        <div>
+        <div class="grid md:grid-cols-2 grid-rows-6 md:col-span-5 gap-6">
           <!-- Your Name -->
           <label class="form-control w-full ">
-            <div class="label">
+            <div class="label pt-0 pb-4">
               <span class="font-bold text-xl">Your Name</span>
             </div>
             <input type="text" placeholder="Enter your full name" class="input font-normal bg-[#F8F8F8] w-full" />
@@ -583,7 +583,7 @@
 
           <!-- Your Email -->
           <label class="form-control w-full ">
-            <div class="label">
+            <div class="label pt-0 pb-4">
               <span class="font-bold text-xl">Your Email</span>
             </div>
             <input type="email" placeholder="Enter your email" class="input font-normal bg-[#F8F8F8] w-full" />
@@ -591,7 +591,7 @@
 
           <!-- Subject -->
           <label class="form-control w-full ">
-            <div class="label">
+            <div class="label pt-0 pb-4">
               <span class="font-bold text-xl">Subject</span>
             </div>
             <input type="text" placeholder="Enter your subject" class="input font-normal bg-[#F8F8F8] w-full" />
@@ -599,26 +599,27 @@
 
           <!-- Phonne Number -->
           <label class="form-control w-full ">
-            <div class="label">
+            <div class="label pt-0 pb-4">
               <span class="font-bold text-xl">Phone Number</span>
             </div>
             <input type="number" placeholder="Enter your phone number" class="input font-normal bg-[#F8F8F8] w-full" />
           </label>
 
           <!-- Text Area -->
-          <label class="form-control w-full ">
-            <div class="label">
+          <label class="form-control w-full md:col-span-2 row-span-3">
+            <div class="label pt-0 pb-4">
               <span class="font-bold text-xl">Message</span>
             </div>
-            <textarea class="textarea bg-[#F8F8F8] h-96 font-normal text-base" placeholder="Write your message"></textarea>
+            <textarea class="textarea bg-[#F8F8F8] h-full font-normal text-base"
+              placeholder="Write your message"></textarea>
           </label>
 
-          
+          <button type="submit"
+            class="btn leading-none border-none text-white font-bold text-xl bg-p-colour w-full py-4 md:col-span-2">Send
+            Message</button>
+
 
         </div>
-
-
-
 
       </div>
     </section>
@@ -627,8 +628,37 @@
 
 
   </main>
-  <footer>
-
+  <footer class="text-white py-24 bg-[#131318] flex items-center justify-center">
+    <div class="footer w-5/6">
+      <aside>
+        <p class="text-3xl font-extrabold">Get In Touch</p>
+        <p class="font-medium text-[#FFFFFF99]">Dit amet consectetur. Condimentum </p>
+        <span></span>
+        <span></span>
+      </aside>
+      <nav>
+        <header class="footer-title">Services</header>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Company</header>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Legal</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </div>
+    
+    
   </footer>
 
 
