@@ -680,6 +680,17 @@
 
   </footer>
 
+  <!-- carousel arrows: slide sideways without jumping the page -->
+  <script>
+    document.querySelectorAll('.carousel a[href^="#slide"]').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        var carousel = btn.closest('.carousel');
+        var slide = document.querySelector(btn.getAttribute('href'));
+        carousel.scrollTo({ left: slide.offsetLeft - carousel.offsetLeft, behavior: 'smooth' });
+      });
+    });
+  </script>
 
 </body>
 
